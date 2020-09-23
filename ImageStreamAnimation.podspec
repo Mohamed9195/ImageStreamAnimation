@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ImageStreamAnimation"
-  spec.version      = "0.0.3"
+  spec.version      = "1.0.0"
   spec.summary      = "A short description of ImageStreamAnimation."
 
 spec.summary      = "Like Facebook Live Stream Images"
