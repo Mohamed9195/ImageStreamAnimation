@@ -10,18 +10,18 @@ import UIKit
 
 open class ImageStreamAnimation {
 
-   public init(itHorizontal: Bool, drawingIn: UIView) {
-        handleTap(itHorizontal: itHorizontal, view: drawingIn)
+    public init(itHorizontal: Bool, drawingIn: UIView, image: UIImage ) {
+        handleTap(itHorizontal: itHorizontal, view: drawingIn, image: image)
     }
 
-    private func handleTap(itHorizontal: Bool, view: UIView) {
+    private func handleTap(itHorizontal: Bool, view: UIView, image: UIImage ) {
         (0...10).forEach { _ in
-            generationViewAnimation(itHorizontal: itHorizontal, view: view)
+            generationViewAnimation(itHorizontal: itHorizontal, view: view, image: image)
         }
     }
 
-   private func generationViewAnimation(itHorizontal: Bool, view: UIView) {
-        let imageForCurve = UIImageView(image: UIImage(named: "staryell"))
+   private func generationViewAnimation(itHorizontal: Bool, view: UIView, image: UIImage ) {
+        let imageForCurve = UIImageView(image: image)
         let dimension = 20 + drand48() * 10
         imageForCurve.frame = CGRect(x: 0, y: 0, width: dimension, height: dimension)
 
