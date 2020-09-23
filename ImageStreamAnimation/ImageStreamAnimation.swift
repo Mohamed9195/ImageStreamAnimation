@@ -10,7 +10,7 @@ import UIKit
 
 open class ImageStreamAnimation {
 
-    init(itHorizontal: Bool, drawingIn: UIView) {
+   public init(itHorizontal: Bool, drawingIn: UIView) {
         handleTap(itHorizontal: itHorizontal, view: drawingIn)
     }
 
