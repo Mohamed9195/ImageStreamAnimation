@@ -15,7 +15,6 @@ spec.ios.deployment_target = "12.0"
 spec.source       = { :git => "https://github.com/Mohamed9195/ImageStreamAnimation.git", :tag => "#{spec.version}" }
 spec.source_files  = "ImageStreamAnimation"
 spec.exclude_files = "Classes/Exclude"
-spec.resources  = "ImageStreamAnimation/*.{xib,png}"
 
 spec.subspec 'App' do |app|
 app.source_files = 'ImageStreamAnimation/**/*.swift'
