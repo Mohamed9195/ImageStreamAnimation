@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7D4E8552251BA78D00E28BB1 /* ImageStreamAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D4E8550251BA78D00E28BB1 /* ImageStreamAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D4E8559251BA95A00E28BB1 /* ImageStreamAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E8558251BA95A00E28BB1 /* ImageStreamAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D4E854D251BA78D00E28BB1 /* ImageStreamAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageStreamAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4E8550251BA78D00E28BB1 /* ImageStreamAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageStreamAnimation.h; sourceTree = "<group>"; };
 		7D4E8551251BA78D00E28BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4E8558251BA95A00E28BB1 /* ImageStreamAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStreamAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				7D4E8550251BA78D00E28BB1 /* ImageStreamAnimation.h */,
 				7D4E8551251BA78D00E28BB1 /* Info.plist */,
+				7D4E8558251BA95A00E28BB1 /* ImageStreamAnimation.swift */,
 			);
 			path = ImageStreamAnimation;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					7D4E854C251BA78D00E28BB1 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4E8559251BA95A00E28BB1 /* ImageStreamAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		7D4E8556251BA78D00E28BB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JNP78QVJKX;
@@ -268,6 +274,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ImageStreamAnimation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +283,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.ImageStreamAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +293,7 @@
 		7D4E8557251BA78D00E28BB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JNP78QVJKX;
@@ -292,6 +302,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ImageStreamAnimation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MH.ImageStreamAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
